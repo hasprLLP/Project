@@ -1,63 +1,77 @@
 import { StyleSheet } from "react-native";
+import { Dimensions } from "react-native";
+
+const windowWidth = Dimensions.get('window').width;
+const windowHeight = Dimensions.get('window').height;
 
 const styles = StyleSheet.create({
     container: {
         flex: 1,
-        
+
     },
 
-    container_1:{
-        paddingTop: "13%",
-        paddingLeft: "5%"
+    container_1: {
+        paddingTop: windowHeight * 0.08,
+        paddingLeft: windowWidth * 0.06
     },
 
     logo: {
-        width: 200,
-        height: 40,
+        width: windowWidth * 0.5,
+        height: windowHeight * 0.06,
+        backgroundColor: "red"
     },
 
     container_3: {
         backgroundColor: 'white',
-        padding: 15,
-        paddingTop: 30,
+        padding: windowHeight * 0.01,
+        paddingTop: windowHeight * 0.03,
     },
 
     details: {
         fontSize: 20,
-        paddingLeft: "2%",
+        paddingLeft: windowWidth * 0.04,
         fontWeight: "700"
 
     },
 
     details_1: {
-        fontSize: 13,
-        paddingLeft: "2%",
-        paddingTop: "2%"
+        fontSize: windowHeight * 0.02,
+        paddingLeft: windowWidth * 0.04,
+        // fontWeight: "700"
+        paddingTop: windowHeight * 0.02
     },
 
     image: {
-        width: '100%',
-        height: 200
+        width: windowWidth * 1,
+        height: windowHeight * 0.3
     },
 
     container_5: {
-        marginTop: 70,
-        width: "89%",
-        marginLeft: 22,
+        marginTop: windowHeight * 0.05,
+        width: windowWidth * 0.9,
+        marginLeft: windowWidth * 0.06,
     },
 
-    btttn: {
-        height: 40,
-        width: "88%",
+    btn: {
+        textAlign: "center",
+        marginTop: windowHeight*0.015,
+        fontSize: windowHeight*0.02,
+        color: "white",
+        fontWeight: "800"
+    },
+
+    bttn: {
+        height: windowHeight * 0.06,
+        width: windowWidth * 0.8,
         backgroundColor: '#38b2ac',
         borderRadius: 10,
-        marginLeft: 15
+        marginLeft: windowWidth * 0.03
     },
 
     details_3: {
-        fontSize: 10,
+        fontSize: windowHeight * 0.014,
         fontWeight: "200",
-        paddingLeft: 12
+        paddingLeft: windowWidth * 0.05
 
     },
 
